@@ -139,6 +139,16 @@ npm run dev
 
 Open your browser at `http://localhost:5173`.
 
+### Twilio SMS Setup
+Duty notifications are sent through the local Vite API so Twilio credentials are not exposed in browser code.
+
+1. Copy `.env.example` to `.env.local`.
+2. Set `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` to your rotated Twilio credentials.
+3. Set either `TWILIO_FROM_NUMBER` to a Twilio-enabled number on your account, or `TWILIO_MESSAGING_SERVICE_SID` to a configured Messaging Service SID. If both are set, the Messaging Service is used.
+4. Restart `npm run dev` after editing `.env.local`.
+
+The recipient phone number must be in international format. Twilio trial accounts can only message verified recipient numbers.
+
 ### Production Build
 ```bash
 npm run build

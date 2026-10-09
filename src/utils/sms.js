@@ -52,16 +52,10 @@ export function normalizePhone(phone = '') {
 }
 
 export async function sendDutySms(phone, message) {
-  const body = new URLSearchParams({
-    phone: normalizePhone(phone),
-    message,
-    key: 'textbelt',
-  });
-
-  const res = await fetch('https://textbelt.com/text', {
+  const res = await fetch('/api/sms', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body,
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ to: normalizePhone(phone), message }),
   });
 
   return res.json();
