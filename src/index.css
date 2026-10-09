@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  --color-forest: #386641;
+  --color-leaf: #6a994e;
+  --color-lime: #a7c957;
+  --color-cream: #f2e8cf;
+  --color-brick: #bc4749;
+  --color-indigo-400: #a7c957;
+  --color-indigo-500: #6a994e;
+  --color-indigo-600: #386641;
+  --color-indigo-700: #2d5234;
+  --color-indigo-950: #1e3324;
+  --color-cyan-400: #a7c957;
+  --color-cyan-500: #6a994e;
+  --color-cyan-600: #386641;
+  --color-emerald-400: #a7c957;
+  --color-emerald-500: #6a994e;
+  --color-emerald-600: #386641;
+  --color-rose-500: #bc4749;
+  --color-rose-600: #bc4749;
+  --color-red-500: #bc4749;
+  --color-red-600: #bc4749;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 1.75rem;
+}
+
+:root {
+  color-scheme: light;
+  --page-bg: #f2e8cf;
+  --card-bg: #fffdf8;
+  --ink: #386641;
+}
+
+.dark {
+  color-scheme: dark;
+  --page-bg: #15241a;
+  --card-bg: #243528;
+  --ink: #f2e8cf;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--ink);
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+html:not(.dark) .bg-white {
+  background-color: #fffdf8;
+}
+
+html:not(.dark) .dark\:bg-slate-950,
+html:not(.dark) .dark\:bg-slate-800 {
+  background-color: transparent;
+}
+
+.dark .bg-white {
+  background-color: #243528;
+}
+
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl {
+  border-radius: 1.35rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 102, 65, 0.35);
+  border-radius: 8px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(167, 201, 87, 0.35);
+}
+
+.glass-panel {
+  background: rgba(255, 253, 248, 0.88);
+  backdrop-filter: blur(12px);
+}
+
+.dark .glass-panel {
+  background: rgba(36, 53, 40, 0.82);
+  backdrop-filter: blur(12px);
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+
+@media print {
+  html, body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .no-print,
+  aside,
+  header,
+  nav {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #admit-card-print,
+  #admit-card-print * {
+    visibility: visible;
+  }
+
+  #admit-card-print {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    box-shadow: none !important;
+    border: 1px solid #386641 !important;
+    background: white !important;
+  }
+}
