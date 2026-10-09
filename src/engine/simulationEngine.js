@@ -1,4 +1,4 @@
-// EXAMGUARD What-If Simulation Engine
+// BENCHMARK What-If Simulation Engine
 // Clones real schedule state into an isolated sandbox to test hypothetical scenarios
 
 import { validateSchedule } from './validator.js';

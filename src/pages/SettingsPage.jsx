@@ -29,7 +29,7 @@ export default function SettingsPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `EXAMGUARD_System_State_Backup.json`;
+    a.download = `BENCHMARK_System_State_Backup.json`;
     document.body.appendChild(a);
     a.click();
     a.remove();

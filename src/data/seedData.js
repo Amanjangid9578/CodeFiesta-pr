@@ -1,4 +1,4 @@
-// EXAMGUARD Seed Data
+// BENCHMARK Seed Data
 // Realistic university examination scenario
 
 export const INITIAL_SLOTS = [

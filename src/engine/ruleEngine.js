@@ -1,4 +1,4 @@
-// EXAMGUARD Natural Language Rule Builder Engine
+// BENCHMARK Natural Language Rule Builder Engine
 // Parses natural language rules into structured, executable constraints
 
 export const RULE_TYPES = {

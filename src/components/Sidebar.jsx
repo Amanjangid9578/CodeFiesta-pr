@@ -98,7 +98,7 @@ export default function Sidebar({ isOpen, onClose }) {
           </div>
           <div>
             <div className="flex items-center space-x-1.5">
-              <span className="font-extrabold text-base tracking-wider text-white">EXAMGUARD</span>
+              <span className="font-extrabold text-base tracking-wider text-white">BENCHMARK</span>
               <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-[#a7c957]/25 text-[#f2e8cf] border border-[#a7c957]/40">
                 PRO
               </span>

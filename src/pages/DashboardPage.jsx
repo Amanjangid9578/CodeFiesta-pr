@@ -120,7 +120,7 @@ export default function DashboardPage() {
             <span className="text-slate-400 text-xs">• 2026 End-Semester Examinations</span>
           </div>
           <h1 className="text-xl md:text-2xl font-extrabold tracking-tight">
-            EXAMGUARD Command Center
+            BENCHMARK Command Center
           </h1>
           <p className="text-xs text-slate-300 max-w-xl leading-relaxed">
             Autonomous examination scheduling with active constraint validation, minimum-disruption repair, and continuous fault tolerance.

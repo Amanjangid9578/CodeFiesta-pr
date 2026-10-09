@@ -1,4 +1,4 @@
-// EXAMGUARD Exam Resilience Score Engine
+// BENCHMARK Exam Resilience Score Engine
 // Evaluates real dynamic metrics (0-100) based on current infrastructure and schedule health
 
 export function calculateResilienceScore(halls, invigilators, students, schedule, validationResult) {

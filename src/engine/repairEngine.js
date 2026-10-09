@@ -1,4 +1,4 @@
-// EXAMGUARD Minimum-Disruption Self-Healing Repair Engine
+// BENCHMARK Minimum-Disruption Self-Healing Repair Engine
 // Evaluates multiple repair candidates and selects the solution with minimum perturbation
 
 import { validateSchedule } from './validator.js';

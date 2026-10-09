@@ -124,7 +124,7 @@ export default function RecoveryPlaygroundPage() {
             Self-Healing Recovery Playground
           </h1>
           <p className="text-xs text-slate-300 max-w-xl">
-            Intentionally stress-test and disrupt the examination timetable. EXAMGUARD calculates minimum perturbation repairs in milliseconds.
+            Intentionally stress-test and disrupt the examination timetable. BENCHMARK calculates minimum perturbation repairs in milliseconds.
           </p>
         </div>
 

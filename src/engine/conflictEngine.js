@@ -1,4 +1,4 @@
-// EXAMGUARD Explainable Conflict Engine
+// BENCHMARK Explainable Conflict Engine
 // Formulates human-readable cause-and-effect explanations and automated single-click repair mutations
 
 /**

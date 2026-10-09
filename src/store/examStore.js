@@ -1,4 +1,4 @@
-// EXAMGUARD Central State Store (Zustand + LocalStorage)
+// BENCHMARK Central State Store (Zustand + LocalStorage)
 import { create } from 'zustand';
 import {
   INITIAL_HALLS,

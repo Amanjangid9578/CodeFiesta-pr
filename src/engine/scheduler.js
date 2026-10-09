@@ -1,4 +1,4 @@
-// EXAMGUARD Complete Scheduling Engine
+// BENCHMARK Complete Scheduling Engine
 // Generates conflict-free, resilient timetable allocations with balanced invigilator workload
 
 import { validateSchedule } from './validator.js';
@@ -136,7 +136,7 @@ export function generateOptimalSchedule(halls, invigilators, students, papers, s
 
   const generatedSchedule = {
     id: `SCHED-${Date.now()}`,
-    name: 'EXAMGUARD Master Timetable',
+    name: 'BENCHMARK Master Timetable',
     version: '1.0.0',
     generatedAt: new Date().toISOString(),
     status: 'ACTIVE',

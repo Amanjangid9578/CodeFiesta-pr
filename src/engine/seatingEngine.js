@@ -1,4 +1,4 @@
-// EXAMGUARD Smart Seating Engine
+// BENCHMARK Smart Seating Engine
 // Generates hall grid seating with multiple anti-cheating and accessibility-aware strategies
 
 export const SEATING_STRATEGIES = [

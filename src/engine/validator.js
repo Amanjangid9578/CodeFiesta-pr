@@ -1,4 +1,4 @@
-// EXAMGUARD Constraint & Validation Engine
+// BENCHMARK Constraint & Validation Engine
 
 /**
  * Validates a complete examination schedule against Hard and Soft constraints.

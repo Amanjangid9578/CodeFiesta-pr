@@ -28,7 +28,7 @@ export default function LandingPage() {
           </div>
           <div>
             <div className="flex items-center space-x-2">
-              <span className="font-extrabold text-lg tracking-wider">EXAMGUARD</span>
+              <span className="font-extrabold text-lg tracking-wider">BENCHMARK</span>
               <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
                 ENTERPRISE
               </span>
@@ -69,7 +69,7 @@ export default function LandingPage() {
         </h1>
 
         <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-          The next-generation examination operations platform with real algorithmic self-healing. When halls fail or proctors call in sick, EXAMGUARD automatically recalculates the minimum-disruption repair in milliseconds.
+          The next-generation examination operations platform with real algorithmic self-healing. When halls fail or proctors call in sick, BENCHMARK automatically recalculates the minimum-disruption repair in milliseconds.
         </p>
 
         {/* Primary CTA Buttons */}
@@ -129,7 +129,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="h-16 border-t border-slate-900 px-6 flex items-center justify-between text-xs text-slate-400 max-w-7xl mx-auto w-full">
-        <span>EXAMGUARD &copy; 2026 • Enterprise Resilience Architecture</span>
+        <span>BENCHMARK &copy; 2026 • Enterprise Resilience Architecture</span>
         <span className="font-mono text-[11px] text-slate-400">Offline-Ready • Deterministic Engine</span>
       </footer>
     </div>

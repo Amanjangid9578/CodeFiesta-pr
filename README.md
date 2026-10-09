@@ -1,4 +1,4 @@
-# EXAMGUARD
+# BENCHMARK
 > **"Don't just schedule exams. Make them resilient."**  
 > *Intelligent Examination Operations & Self-Healing Scheduling Platform*
 
@@ -8,10 +8,10 @@
 
 Traditional academic scheduling systems are **static and brittle**: they compute a timetable once, but collapse the moment real-world campus disruptions strike on exam day—a blown HVAC in Hall B, an emergency proctor absence, or an unscheduled influx of repeater students. Administrators are forced to manually scramble, risking timetable clashes, hall capacity violations, and student panic.
 
-**EXAMGUARD** introduces **Autonomous Self-Healing Examination Operations**:
+**BENCHMARK** introduces **Autonomous Self-Healing Examination Operations**:
 1. **Dynamic Master Scheduling**: Generates conflict-free timetable allocations respecting 10 hard and 10 soft constraints.
 2. **Continuous Resilience Scoring**: Evaluates an active **0–100 Exam Resilience Score** across capacity buffers, proctor equity, backup readiness, and fault tolerance.
-3. **Minimum-Disruption Self-Healing Repair**: When a hall or faculty member is compromised, EXAMGUARD does *not* regenerate the entire timetable; it computes and compares multiple candidate solutions and applies the **minimum-perturbation repair** in milliseconds with **0 student timetable clashes**.
+3. **Minimum-Disruption Self-Healing Repair**: When a hall or faculty member is compromised, BENCHMARK does *not* regenerate the entire timetable; it computes and compares multiple candidate solutions and applies the **minimum-perturbation repair** in milliseconds with **0 student timetable clashes**.
 4. **What-If Simulation Sandbox**: Clones the live state into an isolated sandbox to model multi-hall failures, student surges, and staff shortages without touching production.
 5. **Schedule Digital Twin**: Interconnected topological graph tracing physical and operational dependencies between examination halls, course papers, student cohorts, and proctor faculty.
 6. **Smart Anti-Cheating Seating & Accessibility**: Checkerboard matrix dispersion, department alternating, and guaranteed ground-floor placement for candidates with wheelchair or mobility constraints.
@@ -19,9 +19,9 @@ Traditional academic scheduling systems are **static and brittle**: they compute
 
 ---
 
-## ⚡ Why EXAMGUARD Is Different
+## ⚡ Why BENCHMARK Is Different
 
-| Feature | Traditional Timetable Tools | EXAMGUARD |
+| Feature | Traditional Timetable Tools | BENCHMARK |
 | :--- | :--- | :--- |
 | **Reaction to Disruption** | Manual re-entry or global wipe & regenerate | **Algorithmic Self-Healing** with minimum perturbation |
 | **Fault Modeling** | None (pure static schedule) | **What-If Simulator** with isolated sandbox cloning |
@@ -105,7 +105,7 @@ src/
 
 ## 📊 Exam Resilience Score Formulation
 
-EXAMGUARD dynamically calculates an aggregate **Resilience Score** ($R \in [0, 100]$):
+BENCHMARK dynamically calculates an aggregate **Resilience Score** ($R \in [0, 100]$):
 
 $$R = \max\left(5, \; \min\left(100, \; \sum_{i=1}^{6} w_i M_i - P_{\text{conflicts}}\right)\right)$$
 
@@ -149,10 +149,10 @@ npm run preview
 
 ## 🎯 Step-by-Step Hackathon Judge Demo Flow
 
-To demonstrate EXAMGUARD's capabilities in **3 minutes**:
+To demonstrate BENCHMARK's capabilities in **3 minutes**:
 
 ### Step 1: Open the Platform (0:00 - 0:30)
-- Launch the app to view the **EXAMGUARD Mission Control Landing Page**.
+- Launch the app to view the **BENCHMARK Mission Control Landing Page**.
 - Click **[ ENTER DEMO ]** to load the pristine benchmark scenario:
   - 6 active halls + 2 backup halls
   - 15 invigilators
@@ -207,4 +207,4 @@ To demonstrate EXAMGUARD's capabilities in **3 minutes**:
 
 ---
 
-*EXAMGUARD — Built for Hackathons. Engineered for Production.*
+*BENCHMARK — Built for Hackathons. Engineered for Production.*

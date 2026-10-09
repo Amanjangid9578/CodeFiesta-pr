@@ -92,7 +92,7 @@ export default function StudentsPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `EXAMGUARD_Students_Roster.csv`;
+    a.download = `BENCHMARK_Students_Roster.csv`;
     document.body.appendChild(a);
     a.click();
     a.remove();

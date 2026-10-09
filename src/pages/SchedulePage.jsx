@@ -60,7 +60,7 @@ export default function SchedulePage() {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(schedule, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `EXAMGUARD_Schedule_${new Date().toISOString().slice(0, 10)}.json`);
+    downloadAnchor.setAttribute("download", `BENCHMARK_Schedule_${new Date().toISOString().slice(0, 10)}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -76,7 +76,7 @@ export default function SchedulePage() {
     const url = URL.createObjectURL(blob);
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", url);
-    downloadAnchor.setAttribute("download", `EXAMGUARD_Master_Timetable.csv`);
+    downloadAnchor.setAttribute("download", `BENCHMARK_Master_Timetable.csv`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

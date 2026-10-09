@@ -21,7 +21,7 @@ export default function AuditLogPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `EXAMGUARD_Audit_Trail.csv`;
+    a.download = `BENCHMARK_Audit_Trail.csv`;
     document.body.appendChild(a);
     a.click();
     a.remove();
